@@ -21,4 +21,4 @@ def index():
 
 if __name__ == '__main__':
     signal.signal(signal.SIGTERM, exit_gracefully)
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0',port=80,threaded=True)
