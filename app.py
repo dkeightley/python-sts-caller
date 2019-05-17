@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, Response
+from flask import Flask
 import boto3
 import signal
 import sys
