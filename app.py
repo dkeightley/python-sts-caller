@@ -8,8 +8,8 @@ app = Flask(__name__)
 client = boto3.client('sts')
 
 def exit_gracefully(signumber, frame):
-  print "Received signal", signumber, ", I\'m exiting..."
-  sys.exit()
+  print("Received signal", signumber, "cleaning up...")
+  sys.exit(0)
 
 @app.route('/')
 def index():
